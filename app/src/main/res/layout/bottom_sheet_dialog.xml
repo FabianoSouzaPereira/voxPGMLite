@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:minHeight="180dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textnameDevice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="teste"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice1"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="start"
+                    android:contentDescription="@string/lampada"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice2"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice3"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice4"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice5"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice6"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice7"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput7"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgdevice8"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_wb_incandescent_24" />
+
+                <TextView
+                    android:id="@+id/textOutput8"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="teste"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E5E5E5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSheetclose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corner"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnClosesheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Fechar"
+            android:textColor="#1E82FF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

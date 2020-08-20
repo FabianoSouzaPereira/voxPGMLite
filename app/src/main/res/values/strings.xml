@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Vox PGM Lite</string>
+    <string name="title_activity_include_device"></string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="sa_da_auxiliar_1">Saída auxiliar 1</string>
+    <string name="sa_da_auxiliar_2">Saída auxiliar 2</string>
+    <string name="sa_da_auxiliar_3">Saída auxiliar 3</string>
+    <string name="sa_da_auxiliar_4">Saída auxiliar 4</string>
+    <string name="sa_da_auxiliar_5">Saída auxiliar 5</string>
+    <string name="sa_da_auxiliar_6">Saída auxiliar 6</string>
+    <string name="sa_da_auxiliar_7">Saída auxiliar 7</string>
+    <string name="sa_da_auxiliar_8">Saída auxiliar 8</string>
+    <string name="dispositivo">Dispositivo:</string>
+    <string name="acionamentos">Acionamentos</string>
+    <string name="conex_o">Conexão</string>
+    <string name="ip_dns">IP/DNS</string>
+    <string name="_000_000_000">000.000.000</string>
+    <string name="numberPort">65535</string>
+    <string name="porta_de_controle">Porta de Controle:</string>
+    <string name="ico">Icone:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="tempo">Tempo:</string>
+    <string name="nome">Nome:</string>
+    <string name="escolha_um_icone">Escolha um icone</string>
+    <string name="device_1">Device 1</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="novo_dispositivo">Novo dispositivo</string>
+    <string name="save">Salvar</string>
+    <string name="title_activity_update_device">UpdateDevice</string>
+    <string name="edit">Editar</string>
+    <string name="_1_65565">1-65565</string>
+    <string name="lampada">BulbIcon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comando1">Comando 1</string>
+    <string name="comando2">Comando 2</string>
+    <string name="comando3">Comando 3</string>
+    <string name="comando4">Comando 4</string>
+    <string name="comando5">Comando 5</string>
+    <string name="comando6">Comando 6</string>
+    <string name="comando7">Comando 7</string>
+    <string name="comando8">Comando 8</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="nenhuma_saida_ativada">Nenhuma Saída está Ativada.</string>
+</resources>

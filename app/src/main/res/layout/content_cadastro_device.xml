@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.CadastroDevices">
+
+    <ScrollView
+        android:id="@+id/skrollInclude"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linLayoutInclude"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/txttitledevice"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/dispositivo"
+                android:textSize="@dimen/textEditview_size_22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/editNamedevice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/txtNamedevice"
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/nome"
+                android:textSize="@dimen/textview_size_14sp"
+                app:layout_constraintBottom_toTopOf="@+id/editNamedevice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/editNamedevice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="4dp"
+                android:hint="@string/novo_dispositivo"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/textEditview_size_22sp"
+                app:layout_constraintBottom_toTopOf="@+id/spinModeldevice1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNamedevice" />
+
+            <Spinner
+                android:id="@+id/spinModeldevice1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/modeltype"
+                android:tag="modeltype"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editNamedevice" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="?android:attr/listDivider" />
+
+            <!-- CONECTIONS -->
+            <TextView
+                android:id="@+id/txtConections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/conex_o"
+                android:textColor="#000000"
+                android:textSize="@dimen/textEditview_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtIpdevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/ip_dns"
+                android:textSize="@dimen/textview_size_14sp" />
+
+            <EditText
+                android:id="@+id/editIpdevice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/textEditview_size_22sp" />
+
+            <!-- ACTIONS -->
+            <TextView
+                android:id="@+id/txtPortcontroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/porta_de_controle"
+                android:textSize="@dimen/textview_size_14sp" />
+
+
+            <EditText
+                android:id="@+id/editPortcontroll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:hint="@string/_1_65565"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textSize="@dimen/textEditview_size_22sp" />
+
+            <TextView
+                android:id="@+id/txtPortconfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/porta_de_controle"
+                android:textSize="@dimen/textview_size_14sp" />
+
+
+            <EditText
+                android:id="@+id/editPortconfig"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:hint="@string/_1_65565"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textSize="@dimen/textEditview_size_22sp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/txtActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/acionamentos"
+                android:textColor="#000000"
+                android:textSize="@dimen/textview_size_18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/btnSwitoutPut1"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:tag="Outputs_icons"
+                android:text="@string/sa_da_auxiliar_1"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/nome"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editNameDevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:hint="@string/nome"
+                    android:inputType="textPersonName"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/ico"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons" />
+
+                <TextView
+                    android:id="@+id/txtTypedevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/tipo"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+
+                <Spinner
+                    android:id="@+id/spinTypedevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array" />
+
+                <TextView
+                    android:id="@+id/txtTimedevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/tempo"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:hint="@string/_2"
+                    android:inputType="number"
+                    android:text="@string/_1"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/btnSwitoutPut2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:text="@string/sa_da_auxiliar_2"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Nome:"
+                    android:textSize="@dimen/textview_size_14sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/editNameDevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Ico:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons" />
+
+                <TextView
+                    android:id="@+id/txtTypedevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tipo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinTypedevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array" />
+
+                <TextView
+                    android:id="@+id/txtTimedevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tempo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/btnSwitoutPut3"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:text="@string/sa_da_auxiliar_3"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Nome:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editNameDevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Ico:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons" />
+
+                <TextView
+                    android:id="@+id/txtTypedevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tipo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinTypedevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array" />
+
+                <TextView
+                    android:id="@+id/txtTimedevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tempo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/btnSwitoutPut4"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:text="@string/sa_da_auxiliar_4"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/nome"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+
+                <EditText
+                    android:id="@+id/editNameDevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/ico"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons"/>
+
+                <TextView
+                    android:id="@+id/txtTypedevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tipo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinTypedevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array"/>
+
+                <TextView
+                    android:id="@+id/txtTimedevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tempo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/btnSwitoutPut5"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:text="@string/sa_da_auxiliar_5"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Nome:" />
+
+                <EditText
+                    android:id="@+id/editNameDevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Ico:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons" />
+
+                <TextView
+                    android:id="@+id/txtTypedevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tipo:" />
+
+                <Spinner
+                    android:id="@+id/spinTypedevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array" />
+
+                <TextView
+                    android:id="@+id/txtTimedevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tempo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/btnSwitoutPut6"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:text="@string/sa_da_auxiliar_6"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedeviceup6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Nome:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editNameDevice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Ico:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons" />
+
+                <TextView
+                    android:id="@+id/txtTypedevice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tipo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinTypedevice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array" />
+
+                <TextView
+                    android:id="@+id/txtTimedevice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tempo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/btnSwitoutPut7"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:text="@string/sa_da_auxiliar_7"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Nome:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editNameDevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Ico:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons" />
+
+                <TextView
+                    android:id="@+id/txtTypedevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tipo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinTypedevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array" />
+
+                <TextView
+                    android:id="@+id/txtTimedevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tempo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/btnSwitoutPut8"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:scaleX="1.0"
+                android:scaleY="1.4"
+                android:switchMinWidth="50dp"
+                android:text="@string/sa_da_auxiliar_8"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearoutput8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtNamedevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Nome:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editNameDevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/textEditview_size_22sp" />
+
+                <TextView
+                    android:id="@+id/txtIcodevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Ico:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinIcoDevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/outputs_icons"
+                    android:tag="outputs_icons" />
+
+                <TextView
+                    android:id="@+id/txtTypedevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tipo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <Spinner
+                    android:id="@+id/spinTypedevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:entries="@array/type_array"
+                    android:tag="type_array" />
+
+                <TextView
+                    android:id="@+id/txtTimedevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Tempo:"
+                    android:textSize="@dimen/textview_size_14sp" />
+
+                <EditText
+                    android:id="@+id/editimedevice8"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:ems="10"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

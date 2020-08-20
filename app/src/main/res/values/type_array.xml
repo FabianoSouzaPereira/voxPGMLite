@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_array">
+        <item>Retenção</item>
+        <item>Pulso</item>
+    </string-array>
+
+    <string-array name="modeltype">
+        <item>Vox PGM 100</item>
+    </string-array>
+
+    <string-array name="outputs_icons">
+        <item>Lâmpada</item>
+        <item>Serviço</item>
+        <item>Ar Condicionado</item>
+        <item>Ligar</item>
+        <item>Semáfaro</item>
+        <item>Dispositivo Elétrico</item>
+        <item>Flash</item>
+        <item>Alarme</item>
+        <item>Bateria Carregada</item>
+    </string-array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".app.CadastroDevices">
+
+    <FrameLayout
+        android:id="@+id/appBarLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorActivity">
+
+        <ImageButton
+            android:id="@+id/btnUpdatedevice"
+            android:layout_width="74dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="end"
+            android:background="@color/colorActivity"
+            android:src="@android:drawable/ic_menu_save"
+            android:tag="update"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/btnSavedevice"
+            android:layout_width="74dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="end"
+            android:background="@color/colorActivity"
+            android:src="@android:drawable/ic_menu_save"
+            android:tag="save"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btnCancelDevice"
+            android:layout_width="74dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/colorActivity"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tag="cancel" />
+
+        <TextView
+            android:id="@+id/txtTitlecad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cadastrar"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/content_cadastro_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout1" />
+
+
+</RelativeLayout>

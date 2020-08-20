@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="switchTextAppearance">
+        <item name="android:textColor">#000dd0</item>
+        <item name="android:selectedWeekBackgroundColor">#00dd0a</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">#808080</item>
+    </style>
+</resources>
