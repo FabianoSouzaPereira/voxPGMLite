@@ -213,7 +213,9 @@ public class MainActivity extends AppCompatActivity {
 
             // Remove default white color background
             FrameLayout bottomSheet = mBottomDialogNotificationAction.findViewById(R.id.design_bottom_sheet);
-            bottomSheet.setBackground(null);
+            if (bottomSheet != null) {
+                bottomSheet.setBackground(null);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

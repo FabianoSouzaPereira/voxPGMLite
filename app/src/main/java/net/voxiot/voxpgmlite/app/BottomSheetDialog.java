@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import net.voxiot.voxpgmlite.R;
 import net.voxiot.voxpgmlite.database.Database;
@@ -109,7 +111,68 @@ public class BottomSheetDialog extends com.google.android.material.bottomsheet.B
             image1.setVisibility(View.VISIBLE);
             image1.setImageResource(R.drawable.ic_baseline_remove_circle_outline_24);
         }
+
+
+
     }
+
+    private View.OnClickListener output1Click1 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 1 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private View.OnClickListener output1Click2 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 2 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private View.OnClickListener output1Click3 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 3 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private View.OnClickListener output1Click4 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 4 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private View.OnClickListener output1Click5 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 5 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private View.OnClickListener output1Click6 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 6 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private View.OnClickListener output1Click7 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 7 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private View.OnClickListener output1Click8 = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context.getApplicationContext(),"Saída 8 Clicada!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
+
 
     private View.OnClickListener closeSheet = new View.OnClickListener() {
         @Override
@@ -143,6 +206,15 @@ public class BottomSheetDialog extends com.google.android.material.bottomsheet.B
         output6 = findViewById(R.id.textOutput6);
         output7 = findViewById(R.id.textOutput7);
         output8 = findViewById(R.id.textOutput8);
+
+        output1.setOnClickListener(output1Click1);
+        output2.setOnClickListener(output1Click2);
+        output3.setOnClickListener(output1Click3);
+        output4.setOnClickListener(output1Click4);
+        output5.setOnClickListener(output1Click5);
+        output6.setOnClickListener(output1Click6);
+        output7.setOnClickListener(output1Click7);
+        output8.setOnClickListener(output1Click8);
     }
 
     private int switchImg(String ico){
